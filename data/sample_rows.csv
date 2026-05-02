@@ -1,0 +1,5 @@
+metric_date,customer_segment,order_count,refund_count,refund_rate
+2026-04-01,new,120,6,0.0500
+2026-04-01,returning,240,8,0.0333
+2026-04-02,new,110,5,0.0455
+2026-04-02,returning,260,9,0.0346

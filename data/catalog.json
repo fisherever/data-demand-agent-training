@@ -1,0 +1,35 @@
+{
+  "tables": {
+    "raw.orders": {
+      "owner": "demo-team",
+      "description": "Synthetic order events.",
+      "columns": [
+        {"name": "order_id", "type": "string", "description": "Synthetic order identifier."},
+        {"name": "customer_segment", "type": "string", "description": "Synthetic segment label."},
+        {"name": "order_date", "type": "date", "description": "Synthetic order date."},
+        {"name": "amount", "type": "decimal", "description": "Synthetic order amount."}
+      ]
+    },
+    "raw.refunds": {
+      "owner": "demo-team",
+      "description": "Synthetic refund events.",
+      "columns": [
+        {"name": "refund_id", "type": "string", "description": "Synthetic refund identifier."},
+        {"name": "order_id", "type": "string", "description": "Synthetic order identifier."},
+        {"name": "refund_date", "type": "date", "description": "Synthetic refund date."},
+        {"name": "refund_amount", "type": "decimal", "description": "Synthetic refund amount."}
+      ]
+    },
+    "mart.refund_metrics_daily": {
+      "owner": "analytics-demo",
+      "description": "Daily synthetic refund metrics by segment.",
+      "columns": [
+        {"name": "metric_date", "type": "date", "description": "Metric date."},
+        {"name": "customer_segment", "type": "string", "description": "Synthetic segment label."},
+        {"name": "order_count", "type": "integer", "description": "Number of synthetic orders."},
+        {"name": "refund_count", "type": "integer", "description": "Number of synthetic refunds."},
+        {"name": "refund_rate", "type": "decimal", "description": "Synthetic refund count divided by order count."}
+      ]
+    }
+  }
+}

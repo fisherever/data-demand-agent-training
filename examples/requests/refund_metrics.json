@@ -1,0 +1,9 @@
+{
+  "title": "refund metrics",
+  "business_question": "Which customer segments have elevated daily refund rates?",
+  "metric": "refund_rate",
+  "grain": "metric_date, customer_segment",
+  "time_window": "last 7 complete days",
+  "target_table": "mart.refund_metrics_daily",
+  "acceptance_criteria": "The output includes daily order_count, refund_count, and refund_rate by segment."
+}
