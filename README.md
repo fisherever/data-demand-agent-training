@@ -53,8 +53,3 @@ The implementation uses only the Python standard library at runtime.
 - No production SQL or query result samples.
 - No screenshots, logs, or config files from real environments.
 - Evidence examples use counts, schemas, hashes, and synthetic rows only.
-
-## License
-
-Choose a license before publishing. If this is used for external training, MIT or
-Apache-2.0 are common choices.
